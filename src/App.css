@@ -1,31 +1,46 @@
-/* Puedes añadir estos estilos en src/App.css para ajustes adicionales */
-@media (max-width: 767px) {
-  .navbar {
-    text-align: center;
-  }
+body {
+  padding-top: 32px; 
+  padding-bottom: 50px; 
+  font-family: 'Roboto', sans-serif; 
+}
 
-  .navbar-brand {
-    display: block;
-    margin: auto;
-  }
+.App {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
-  .form-inline {
-    display: block;
-    text-align: center;
-  }
+.search-page {
+  min-height: 100vh; 
+  background-image: url('https://images.alphacoders.com/861/thumb-1920-86131.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 
-  .form-inline .form-control {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; 
+}
 
-  .form-inline .btn {
-    width: 100%;
-  }
+p, a, span, button {
+  font-family: 'Open Sans', sans-serif;
+}
 
-  body {
-    padding-top: 70px; 
-    padding-bottom: 50px; 
-  }
-  
+.navbar-brand {
+  font-family: 'Poppins', sans-serif; 
+}
+
+.homepage {
+  text-align: center;
+  padding-top: 50px;
+  color: black; 
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+  margin-top: 20px;
 }

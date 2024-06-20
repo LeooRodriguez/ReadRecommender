@@ -19,12 +19,6 @@ const Footer = () => {
             </a>
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col xs="auto" className="footer-text">
-            &copy; 2024 BookRecommender. 
-            All rights reserved.
-          </Col>
-        </Row>
       </Container>
     </footer>
   );
