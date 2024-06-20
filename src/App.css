@@ -1,0 +1,31 @@
+/* Puedes añadir estos estilos en src/App.css para ajustes adicionales */
+@media (max-width: 767px) {
+  .navbar {
+    text-align: center;
+  }
+
+  .navbar-brand {
+    display: block;
+    margin: auto;
+  }
+
+  .form-inline {
+    display: block;
+    text-align: center;
+  }
+
+  .form-inline .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form-inline .btn {
+    width: 100%;
+  }
+
+  body {
+    padding-top: 70px; 
+    padding-bottom: 50px; 
+  }
+  
+}
