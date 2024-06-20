@@ -1,39 +1,37 @@
 .custom-navbar {
-    background-color: #343a40;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1030;
-  }
-  
-  .brand-name {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-right: auto;
-  }
-  
-  .form-inline {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-  
+  background-color: #343a40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1030;
+}
+
+.brand-name {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.form-inline .form-control {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.form-inline .btn {
+  width: 100px;
+}
+
+@media (max-width: 767px) {
   .form-inline .form-control {
-    width: 250px;
-    margin-right: 10px;
+    width: 100%;
+    margin-bottom: 10px;
   }
-  
+
   .form-inline .btn {
-    width: 100px;
+    width: 100%;
   }
-  
-  @media (max-width: 767px) {
-    .form-inline .form-control {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    .form-inline .btn {
-      width: 100%;
-    }
-  }
-  
+}

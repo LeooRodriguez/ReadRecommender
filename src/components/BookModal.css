@@ -1,0 +1,34 @@
+.modal-header {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    background-color: #f1f1f1;
+  }
+  
+  .modal-footer .btn {
+    width: 100px;
+  }
+  
+  @media (max-width: 767px) {
+    .modal-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .modal-body img {
+      margin-bottom: 15px;
+    }
+  }
+  
