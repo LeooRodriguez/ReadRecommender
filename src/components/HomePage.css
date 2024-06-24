@@ -1,0 +1,119 @@
+body {
+  transition: background-color 1s ease;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/16553326/pexels-photo-16553326/free-photo-of-libro.jpeg') no-repeat center center/cover;
+  color: #D2B48C;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.highlight-section {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 100px 0;
+}
+
+.highlight-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.highlight-button {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #A2C2E2;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-button:hover {
+  background-color: #A8D5BA;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ECECEC;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carousel .slide img {
+  object-fit: cover;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .carousel .slide img {
+    height: 250px;
+  }
+}
+
+.homepage h5 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 40px;
+  color: #A2C2E2;
+}
+
+.homepage p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.section h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: #3a9764;
+}
+
+.section p {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+}
+
+.section .btn {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #A2C2E2;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section .btn:hover {
+  background-color: #A8D5BA;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #41423d;
+  font-style: italic;
+}
+
+.testimonial-name {
+  font-family: 'Open Sans', sans-serif;
+  color: #147a2d;
+  margin-top: 10px;
+}
