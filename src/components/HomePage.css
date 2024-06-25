@@ -108,12 +108,12 @@ body {
 
 .testimonial-text {
   font-family: 'Open Sans', sans-serif;
-  color: #41423d;
+  color: #41423d !important; 
   font-style: italic;
 }
 
 .testimonial-name {
   font-family: 'Open Sans', sans-serif;
-  color: #147a2d;
+  color: #3a9764 !important;
   margin-top: 10px;
 }

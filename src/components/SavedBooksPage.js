@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import RecommendationsModal from './RecommendationsModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './SavedBooksPage.css';
 
 const SavedBooksPage = () => {
   const [savedBooks, setSavedBooks] = useState([]);
+  const [showRecommendations, setShowRecommendations] = useState(false);
 
   useEffect(() => {
     const books = JSON.parse(localStorage.getItem('savedBooks')) || [];
@@ -17,14 +19,23 @@ const SavedBooksPage = () => {
     localStorage.setItem('savedBooks', JSON.stringify(updatedBooks));
   };
 
+  const handleShowRecommendations = () => {
+    setShowRecommendations(true);
+  };
+
+  const handleCloseRecommendations = () => {
+    setShowRecommendations(false);
+  };
+
   return (
     <Container className="saved-books-page">
       <Row>
         <Col>
           <h1 className="page-title">Saved Books</h1>
-          <Row>
+          <Button variant="primary" onClick={handleShowRecommendations}>Get Recommendations</Button>
+          <Row className="mt-4">
             {savedBooks.length === 0 ? (
-              <p>No books saved yet.</p>
+              <p>No books saved.</p>
             ) : (
               savedBooks.map((book, index) => (
                 <Col md={4} key={index} className="mb-4">
@@ -47,6 +58,11 @@ const SavedBooksPage = () => {
           </Row>
         </Col>
       </Row>
+      <RecommendationsModal 
+        show={showRecommendations} 
+        handleClose={handleCloseRecommendations} 
+        savedBooks={savedBooks} 
+      />
     </Container>
   );
 };

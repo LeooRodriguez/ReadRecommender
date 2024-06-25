@@ -1,0 +1,17 @@
+.recommendation-cover {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.recommendation-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

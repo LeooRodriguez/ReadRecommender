@@ -1,5 +1,5 @@
 .custom-navbar {
-  background-color: #343a40;
+  background-color: #343a40 !important; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1030;
 }
@@ -7,7 +7,7 @@
 .brand-name {
   font-family: 'Arial Black', sans-serif;
   font-size: 1.5rem;
-  color: #ffffff;
+  color: #ffffff !important; 
 }
 
 .form-inline {
@@ -23,6 +23,14 @@
 
 .form-inline .btn {
   width: 100px;
+}
+
+.custom-nav-link {
+  color: #ffffff !important; 
+}
+
+.custom-nav-link:hover {
+  color: #007bff !important; 
 }
 
 @media (max-width: 767px) {

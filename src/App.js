@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import SearchPage from './components/SearchPage';
 import SavedBooksPage from './components/SavedBooksPage';
+import NextBooksPage from './components/NextBooksPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<div className="search-page"><SearchPage /></div>} />
           <Route path="/saved" element={<SavedBooksPage />} />
+          <Route path="/nextbooks" component={NextBooksPage} />
         </Routes>
         <Footer />
       </div>
