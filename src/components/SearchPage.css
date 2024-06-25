@@ -95,4 +95,13 @@
       flex-wrap: nowrap; 
     }
   }
+
+  .search-page {
+    margin-top: 24px; 
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
   

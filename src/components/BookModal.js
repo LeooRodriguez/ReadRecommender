@@ -7,6 +7,26 @@ const BookModal = ({ show, handleClose, book }) => {
 
   const subjects = book.subject?.slice(0, 3).join(', ');
 
+  const saveBook = () => {
+    const savedBooks = JSON.parse(localStorage.getItem('savedBooks')) || [];
+    const bookToSave = {
+      title: book.title,
+      author_name: book.author_name,
+      first_publish_year: book.first_publish_year,
+      publisher: book.publisher,
+      subject: book.subject,
+      cover_i: book.cover_i,
+      first_sentence: book.first_sentence,
+      description: book.description,
+    };
+
+    if (!savedBooks.some(savedBook => savedBook.title === bookToSave.title)) {
+      savedBooks.push(bookToSave);
+      localStorage.setItem('savedBooks', JSON.stringify(savedBooks));
+    }
+    handleClose();
+  };
+
   return (
     <Modal show={show} onHide={handleClose} centered>
       <Modal.Header closeButton>
@@ -28,6 +48,9 @@ const BookModal = ({ show, handleClose, book }) => {
         </Row>
       </Modal.Body>
       <Modal.Footer>
+        <Button variant="success" onClick={saveBook}>
+          Save
+        </Button>
         <Button variant="secondary" onClick={handleClose}>
           Close
         </Button>

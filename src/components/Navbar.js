@@ -13,6 +13,7 @@ const NavigationBar = () => {
           <Nav className="mr-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/search">Books</Nav.Link>
+            <Nav.Link href="/saved">Saved Books</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

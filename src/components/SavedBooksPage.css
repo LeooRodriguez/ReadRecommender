@@ -1,0 +1,24 @@
+.saved-books-page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .page-title {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .card-text {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
