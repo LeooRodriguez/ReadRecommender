@@ -92,7 +92,7 @@ body {
 .section .btn {
   font-family: 'Open Sans', sans-serif;
   color: white;
-  background-color: #A2C2E2;
+  background-color: #2280df;
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
@@ -102,7 +102,7 @@ body {
 }
 
 .section .btn:hover {
-  background-color: #A8D5BA;
+  background-color: #343a40;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
