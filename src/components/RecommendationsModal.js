@@ -53,6 +53,7 @@ const RecommendationsModal = ({ show, handleClose, savedBooks }) => {
     const nextBooks = JSON.parse(localStorage.getItem('nextBooks')) || [];
     nextBooks.push(book);
     localStorage.setItem('nextBooks', JSON.stringify(nextBooks));
+    console.log('Libros listos:', nextBooks); //Borrar esto en limpieza final
     alert(`${book.title} has been saved to your next books.`);
   };
 

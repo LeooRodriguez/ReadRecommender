@@ -43,13 +43,13 @@ const SavedBooksPage = () => {
                     <Card.Img variant="top" src={`https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`} />
                     <Card.Body>
                       <Card.Title>{book.title}</Card.Title>
+                      <Button variant="danger" onClick={() => removeBook(index)}>Remove</Button>
                       <Card.Text>
                         <strong>Author:</strong> {book.author_name?.join(', ')}<br/>
                         <strong>First Published:</strong> {book.first_publish_year}<br/>
                         <strong>Publisher:</strong> {book.publisher?.join(', ')}<br/>
                         <strong>Subjects:</strong> {book.subject?.slice(0, 3).join(', ')}
                       </Card.Text>
-                      <Button variant="danger" onClick={() => removeBook(index)}>Remove</Button>
                     </Card.Body>
                   </Card>
                 </Col>

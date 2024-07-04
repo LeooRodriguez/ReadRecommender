@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<div className="search-page"><SearchPage /></div>} />
           <Route path="/saved" element={<SavedBooksPage />} />
-          <Route path="/nextbooks" component={NextBooksPage} />
+          <Route path="/nextbooks" element={<NextBooksPage />} />
         </Routes>
         <Footer />
       </div>
