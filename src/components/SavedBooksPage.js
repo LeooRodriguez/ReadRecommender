@@ -32,7 +32,11 @@ const SavedBooksPage = () => {
       <Row>
         <Col>
           <h1 className="page-title">Saved Books</h1>
-          <Button variant="primary" onClick={handleShowRecommendations}>Get Recommendations</Button>
+          <div className="center-button">
+            <Button variant="primary" onClick={handleShowRecommendations} className="mb-4">
+              Get Recommendations
+            </Button>
+          </div>
           <Row className="mt-4">
             {savedBooks.length === 0 ? (
               <p>No books saved.</p>

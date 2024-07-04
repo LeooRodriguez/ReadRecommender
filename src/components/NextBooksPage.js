@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './NextBooksPage.css';
 
@@ -12,11 +12,23 @@ const NextBooksPage = () => {
     setNextBooks(books);
   }, []);
 
+  const clearNextBooks = () => {
+    localStorage.removeItem('nextBooks');
+    setNextBooks([]);
+  };
+
   return (
     <Container className="next-books-page">
       <Row>
         <Col>
           <h1 className="page-title">Next Books</h1>
+          {nextBooks.length > 0 && (
+            <div className="center-button">
+              <Button variant="danger" onClick={clearNextBooks} className="mb-4">
+                Clear Next Books
+              </Button>
+            </div>
+          )}
           <Row className="justify-content-center mt-4">
             {nextBooks.length === 0 ? (
               <p>No books added to the list.</p>

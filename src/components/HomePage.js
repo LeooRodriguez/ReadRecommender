@@ -8,7 +8,7 @@ import './HomePage.css';
 
 const HomePage = () => {
   const carouselItems = [
-    { id: 1, image: 'https://images.pexels.com/photos/2228586/pexels-photo-2228586.jpeg', caption: 'Explore a World of Books' },
+    { id: 1, image: 'https://images.pexels.com/photos/2228586/pexels-photo-2228586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', caption: 'Explore a World of Books' },
     { id: 2, image: 'https://images.pexels.com/photos/3207628/pexels-photo-3207628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', caption: 'Find Your Next Favorite Read' },
     { id: 3, image: 'https://images.pexels.com/photos/3747468/pexels-photo-3747468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', caption: 'Discover New Authors and Genres' }
 

@@ -65,3 +65,20 @@
     border-color: #004085;
   }
   
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  .center-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
